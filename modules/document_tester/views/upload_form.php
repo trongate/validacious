@@ -8,7 +8,7 @@
 <body>
     <h1>File Upload Tester</h1>
     
-    <?= validation_errors() ?>
+    <?= $this->validation->display_errors() ?>
 
     <div class="info">
         <p><strong>Allowed:</strong> PDF, ZIP | <strong>Max Size:</strong> 2MB</p>
