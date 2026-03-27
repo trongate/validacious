@@ -44,5 +44,9 @@ $validation_errors = [
     'upload_failed_error'        => 'The [label] failed to upload. Please try again.',
     'not_an_image_error'         => 'The [label] must be a valid image file (JPG, PNG, GIF, or WEBP).',
     'invalid_file_error'         => 'The [label] is invalid or has been corrupted.',
-    'security_threat_error'      => 'A security threat was detected in the [label]. The upload has been blocked.'
+    'security_threat_error'      => 'A security threat was detected in the [label]. The upload has been blocked.',
+	
+	// Trongate Administrators Errors
+	'username_taken'             => 'The [label] is already taken. Please choose another.',
+	'username_in_use'            => 'The [label] is already in use by another account.'
 ];
