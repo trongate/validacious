@@ -44,5 +44,9 @@ $validation_errors = [
     'upload_failed_error'        => 'Le téléchargement de [label] a échoué. Veuillez réessayer.',
     'not_an_image_error'         => 'Le fichier [label] doit être une image valide (JPG, PNG, GIF ou WEBP).',
     'invalid_file_error'         => 'Le fichier [label] est invalide ou corrompu.',
-    'security_threat_error'      => 'Une menace de sécurité a été détectée dans le fichier [label]. Le téléchargement a été bloqué.'
+    'security_threat_error'      => 'Une menace de sécurité a été détectée dans le fichier [label]. Le téléchargement a été bloqué.',
+	
+	// Erreurs des Administrateurs Trongate
+	'username_taken'             => 'Le [label] est déjà pris. Veuillez en choisir un autre.',
+	'username_in_use'            => 'Le [label] est déjà utilisé par un autre compte.'
 ];
