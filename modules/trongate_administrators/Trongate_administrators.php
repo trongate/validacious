@@ -678,8 +678,8 @@ class Trongate_administrators extends Trongate {
         
         if ($is_available === false) {
             return $update_id === 0 
-                ? 'The {label} is already taken. Please choose another.'
-                : 'The {label} is already in use by another account.';
+                ? 'username_taken'
+                : 'username_in_use';
         }
         
         return true;
