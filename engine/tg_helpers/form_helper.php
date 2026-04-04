@@ -209,8 +209,8 @@ function get_attributes_str($attributes): string {
  * Note: The label_text is not escaped by default. If using user-generated content,
  * ensure it is properly sanitized before passing it to this function.
  */
-function form_label(string $label_text, ?string $input_id = null, array $attributes = []): string {
-    $data = ['label_text' => $label_text, 'input_id' => $input_id, 'attributes' => $attributes];
+function form_label(string $label_text, array $attributes = []): string {
+    $data = ['label_text' => $label_text, 'attributes' => $attributes];
     return Modules::run('form/form_label', $data);
 }
 
