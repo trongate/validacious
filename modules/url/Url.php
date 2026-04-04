@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Url Module - Framework Service for URL Manipulation and Routing
  * 
@@ -39,14 +40,11 @@ class Url extends Trongate {
     public function segment(array $data = []): mixed {
         $num = $data['num'] ?? 0;
         $var_type = $data['var_type'] ?? null;
-        
-        $segments = SEGMENTS;
-        
-        // Convert from 1-based to 0-based indexing
-        $index = $num - 1;
 
-        if (isset($segments[$index])) {
-            $value = $segments[$index];
+        $segments = SEGMENTS;
+
+        if (isset($segments[$num])) {
+            $value = $segments[$num];
         } else {
             $value = '';
         }
@@ -54,7 +52,6 @@ class Url extends Trongate {
         if (isset($var_type)) {
             settype($value, $var_type);
         }
-
         return $value;
     }
 
