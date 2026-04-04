@@ -52,7 +52,6 @@ class Url extends Trongate {
         if (isset($var_type)) {
             settype($value, $var_type);
         }
-        die($value);
         return $value;
     }
 
